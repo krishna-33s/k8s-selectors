@@ -17,13 +17,20 @@ spec:
             - us-east-1c
             - us-east-1b
       preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 1
+      - weight: 100
         preference:
           matchExpressions:
           - key: project
             operator: In
             values:
-            - roboshop      
+            - roboshopp 
+      - weight: 20
+        preference:
+          matchExpressions:
+          - key: project
+            operator: In
+            values:
+            - amazon           
   containers:
   - name: nginx
     image: nginx
