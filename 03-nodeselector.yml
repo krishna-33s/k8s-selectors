@@ -9,9 +9,9 @@ spec:
   - name: nginx
     image: nginx
   nodeSelector:
-    project: roboshop  
-  # tolerations:
-  # - key: "project"      
-  #   operator: "Equal"
-  #   value: "roboshop"
-  #   effect: "NoSchedule"
+    project: flipkart  
+  tolerations:
+  - key: "project"      
+    operator: "Equal"
+    value: "roboshop"
+    effect: "NoSchedule"
