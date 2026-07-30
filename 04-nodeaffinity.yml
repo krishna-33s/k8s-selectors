@@ -30,7 +30,7 @@ spec:
           - key: project
             operator: In
             values:
-            - amazon           
+            - flipkart          
   containers:
   - name: nginx
     image: nginx
