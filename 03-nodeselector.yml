@@ -9,9 +9,4 @@ spec:
   - name: nginx
     image: nginx
   nodeSelector:
-    project: flipkart  
-  # tolerations:
-  # - key: "project"      
-  #   operator: "Equal"
-  #   value: "flipkart"
-  #   effect: "NoSchedule"
+    project: flipkart
