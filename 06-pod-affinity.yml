@@ -16,10 +16,6 @@ metadata:
   labels:
     tier: database
 spec:
-  containers:
-  - name: nginx
-    image: nginx  
-  spec:
   affinity:
     podAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
@@ -29,3 +25,7 @@ spec:
             operator: In
             values:
             - backend 
+          topologyKey: topology.kubernetes.io/zone
+  containers:
+  - name: nginx
+    image: nginx        
