@@ -11,3 +11,8 @@ spec:
   # if this label is matches with node labels then this pod will move to inside the label matches node  
   nodeSelector:
     project: flipkart
+  tolerations:
+  - key: "project"
+    operator: "Equal"
+    value: "flipkart"
+    effect: "NoSchedule"
