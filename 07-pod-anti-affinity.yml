@@ -8,11 +8,11 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  tolerations:
-  - key: "project"
-    operator: "Equal"
-    value: "roboshop"
-    effect: "NoSchedule" 
+  # tolerations:
+  # - key: "project"
+  #   operator: "Equal"
+  #   value: "roboshop"
+  #   effect: "NoSchedule"
 ---
 apiVersion: v1
 kind: Pod
@@ -22,7 +22,7 @@ metadata:
     tier: backend
 spec:
   affinity:
-    podAffinity:
+    podAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
           matchExpressions:
@@ -34,8 +34,3 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  tolerations:
-  - key: "project"
-    operator: "Equal"
-    value: "roboshop"
-    effect: "NoSchedule"
