@@ -18,7 +18,7 @@ spec:
           - key: project
             operator: In
             values:
-            - roboshop      
+            - flipkart      
   containers:
   - name: nginx
     image: nginx
