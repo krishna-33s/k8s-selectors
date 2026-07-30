@@ -19,7 +19,7 @@ kind: Pod
 metadata:
   name: pod-2
   labels:
-    tier: database
+    tier: backend
 spec:
   affinity:
     podAffinity:
