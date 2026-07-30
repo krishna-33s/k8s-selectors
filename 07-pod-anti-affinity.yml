@@ -8,6 +8,8 @@ spec:
   containers:
   - name: nginx
     image: nginx
+  nodeselector:
+    project: roboshop  
   tolerations:
   - key: "project"
     operator: "Equal"
