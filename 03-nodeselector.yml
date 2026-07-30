@@ -8,6 +8,6 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  # if this label is matches with node labels then this pod will move to inside the matches node  
+  # if this label is matches with node labels then this pod will move to inside the label matches node  
   nodeSelector:
     project: flipkart
