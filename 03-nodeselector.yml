@@ -10,8 +10,8 @@ spec:
     image: nginx
   nodeSelector:
     project: roboshop  
-  tolerations:
-  - key: "project"      
-    operator: "Equal"
-    value: "roboshop"
-    effect: "NoSchedule"
+  # tolerations:
+  # - key: "project"      
+  #   operator: "Equal"
+  #   value: "roboshop"
+  #   effect: "NoSchedule"
