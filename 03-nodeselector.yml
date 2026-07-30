@@ -11,6 +11,7 @@ spec:
   # if this label is matches with node labels then this pod will move to inside the label matches node  
   nodeSelector:
     project: flipkart
+  # giving permission to this pod which node is tainted .to schedule this pod to tha tainted node
   tolerations:
   - key: "project"
     operator: "Equal"
