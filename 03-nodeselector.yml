@@ -1,13 +1,15 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-toleration
+  name: nginx-tolerated-
   labels:
     env: test
 spec:
   containers:
   - name: nginx
     image: nginx
+  nodeSelector:
+    project: roboshop  
   tolerations:
   - key: "project"      
     operator: "Equal"
