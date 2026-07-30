@@ -25,7 +25,7 @@ spec:
             operator: In
             values:
             - backend 
-          topologyKey: topology.kubernetes.io/zone
+        topologyKey: topology.kubernetes.io/zone
   containers:
   - name: nginx
-    image: nginx        
+    image: nginx
