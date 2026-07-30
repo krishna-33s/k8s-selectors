@@ -14,8 +14,16 @@ spec:
           - key: topology.kubernetes.io/zone
             operator: In
             values:
-            - us-east
+            - us-east-1c
             - us-east-1b
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 1
+        preference:
+          matchExpressions:
+          - key: project
+            operator: In
+            values:
+            - roboshop      
   containers:
   - name: nginx
     image: nginx
