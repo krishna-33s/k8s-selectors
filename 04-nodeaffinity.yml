@@ -14,7 +14,7 @@ spec:
           - key: topology.kubernetes.io/zone
             operator: In
             values:
-            - us-east-1c
+            - us-east
             - us-east-1b
   containers:
   - name: nginx
